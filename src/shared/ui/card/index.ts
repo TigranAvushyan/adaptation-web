@@ -1,3 +1,8 @@
-import * as Card from './card'
-
-export { Card }
+export {
+	Card,
+	CardHeader,
+	CardFooter,
+	CardTitle,
+	CardDescription,
+	CardContent,
+} from './card'
