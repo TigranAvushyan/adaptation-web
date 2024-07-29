@@ -13,7 +13,7 @@ const spinnerVariants = cva('animate-spin', {
 			default: 'w-4 h-4',
 			sm: 'w-3 h-3',
 			lg: 'w-8 h-8',
-			icon: 'w-4 h-4',
+			xl: 'w-16 h-16',
 		},
 	},
 	defaultVariants: {
