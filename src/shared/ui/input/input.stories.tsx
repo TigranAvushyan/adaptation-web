@@ -8,7 +8,7 @@ const meta: Meta<typeof Input> = {
 		type: {
 			control: {
 				type: 'select',
-				options: ['text', 'number', 'password', 'email', 'date', 'search'],
+				options: ['text', 'number', 'password', 'email'],
 			},
 		},
 		className: {
