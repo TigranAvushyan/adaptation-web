@@ -1,6 +1,7 @@
-import { cn } from '@/shared/lib/utils';
 import { VariantProps, cva } from 'class-variance-authority';
 import { FC } from 'react';
+
+import { cn } from '@/shared/lib/utils';
 
 const spinnerVariants = cva('animate-spin', {
 	variants: {

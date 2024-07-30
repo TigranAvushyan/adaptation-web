@@ -1,7 +1,8 @@
 import type { Preview } from '@storybook/react';
 import React from 'react';
-import { ThemeProvider } from '../src/shared/providers/theme';
+
 import '../src/index.css';
+import { ThemeProvider } from '../src/shared/providers/theme';
 
 const preview: Preview = {
 	parameters: {

@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import { PredatoryCard } from './predatory-card';
 
 const meta: Meta<typeof PredatoryCard> = {

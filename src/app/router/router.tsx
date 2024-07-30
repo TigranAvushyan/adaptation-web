@@ -1,5 +1,7 @@
-import { ProtectedLayout } from '@/widgets/protected-layout';
 import { createBrowserRouter } from 'react-router-dom';
+
+import { ProtectedLayout } from '@/widgets/protected-layout';
+
 import { HomePage, LoginPage } from './pages';
 
 export const router: ReturnType<typeof createBrowserRouter> =

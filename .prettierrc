@@ -5,5 +5,18 @@
 	"singleQuote": true,
 	"useTabs": true,
 	"endOfLine": "lf",
-	"printWidth": 80
+	"printWidth": 80,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"^@/app/(.*)$",
+		"^@/pages/(.*)$",
+		"^@/widgets/(.*)$",
+		"^@/features/(.*)$",
+		"^@/shared/(.*)$",
+		"^[./]",
+		"^.css$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
 }
