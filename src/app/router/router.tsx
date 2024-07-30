@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import { AuthLayout } from '@/widgets/auth-layout';
 import { ProtectedLayout } from '@/widgets/protected-layout';
 
 import { HomePage, LoginPage } from './pages';
@@ -17,7 +18,13 @@ export const router: ReturnType<typeof createBrowserRouter> =
 			],
 		},
 		{
-			path: '/login',
-			element: <LoginPage />,
+			path: '/auth/',
+			element: <AuthLayout />,
+			children: [
+				{
+					path: 'login/',
+					element: <LoginPage />,
+				},
+			],
 		},
 	]);

@@ -1,5 +1,7 @@
+import animate from 'tailwindcss-animate';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
 	darkMode: ['class'],
 	content: [
 		'./pages/**/*.{ts,tsx}',
@@ -16,6 +18,7 @@ module.exports = {
 				'2xl': '1400px',
 			},
 		},
+
 		extend: {
 			aspectRatio: {
 				'3/4': '3 / 4',
@@ -76,5 +79,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate')],
+	plugins: [animate],
 };

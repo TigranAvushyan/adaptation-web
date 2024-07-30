@@ -1,0 +1,7 @@
+.center {
+	@apply flex justify-center items-center;
+}
+
+.space {
+	@apply flex gap-2 flex-col;
+}

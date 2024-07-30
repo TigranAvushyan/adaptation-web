@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/shared/providers/theme';
 import { Spinner } from '@/shared/ui/spinner/spinner';
 
 import { router } from '../router/router';
+import './global.css';
 
 export const App = () => {
 	return (

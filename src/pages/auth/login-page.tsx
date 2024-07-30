@@ -1,4 +1,10 @@
+import { Login } from '@/features/auth/ui/login';
+
 const LoginPage = () => {
-	return <div>login</div>;
+	return (
+		<div>
+			<Login />
+		</div>
+	);
 };
 export default LoginPage;
