@@ -1,8 +1,8 @@
-import { ThemeProvider } from '@/shared/providers/theme'
-import { router } from '../router/router'
-import { RouterProvider } from 'react-router-dom'
-import { Suspense } from 'react'
-import { Spinner } from '@/shared/ui/spinner/spinner'
+import { ThemeProvider } from '@/shared/providers/theme';
+import { router } from '../router/router';
+import { RouterProvider } from 'react-router-dom';
+import { Suspense } from 'react';
+import { Spinner } from '@/shared/ui/spinner/spinner';
 
 export const App = () => {
 	return (
@@ -17,5 +17,5 @@ export const App = () => {
 				<RouterProvider router={router}></RouterProvider>
 			</Suspense>
 		</ThemeProvider>
-	)
-}
+	);
+};

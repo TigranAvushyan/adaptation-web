@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react';
 import {
 	Card,
 	CardContent,
@@ -6,16 +6,16 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from './card'
+} from './card';
 
 const meta: Meta<typeof Card> = {
 	title: 'UI/Card',
 	component: Card,
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Card>
+type Story = StoryObj<typeof Card>;
 
 export const Default: Story = {
 	render: () => (
@@ -31,4 +31,4 @@ export const Default: Story = {
 			<CardFooter>Footer</CardFooter>
 		</Card>
 	),
-}
+};

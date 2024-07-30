@@ -1,6 +1,6 @@
-import { cn } from '@/shared/lib/utils'
-import { VariantProps, cva } from 'class-variance-authority'
-import { FC } from 'react'
+import { cn } from '@/shared/lib/utils';
+import { VariantProps, cva } from 'class-variance-authority';
+import { FC } from 'react';
 
 const spinnerVariants = cva('animate-spin', {
 	variants: {
@@ -20,7 +20,7 @@ const spinnerVariants = cva('animate-spin', {
 		variant: 'default',
 		size: 'default',
 	},
-})
+});
 
 export interface SpinnerProps
 	extends React.SVGProps<SVGSVGElement>,
@@ -51,5 +51,5 @@ export const Spinner: FC<SpinnerProps> = ({
 				fill="currentFill"
 			/>
 		</svg>
-	)
-}
+	);
+};

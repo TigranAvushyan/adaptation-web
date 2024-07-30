@@ -1,7 +1,7 @@
-import type { Preview } from '@storybook/react'
-import React from 'react'
-import { ThemeProvider } from '../src/shared/providers/theme'
-import '../src/index.css'
+import type { Preview } from '@storybook/react';
+import React from 'react';
+import { ThemeProvider } from '../src/shared/providers/theme';
+import '../src/index.css';
 
 const preview: Preview = {
 	parameters: {
@@ -19,6 +19,6 @@ const preview: Preview = {
 			</ThemeProvider>
 		),
 	],
-}
+};
 
-export default preview
+export default preview;
