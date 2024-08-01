@@ -129,6 +129,9 @@ importers:
       eslint-plugin-check-file:
         specifier: ^2.8.0
         version: 2.8.0(eslint@8.57.0)
+      eslint-plugin-i18next:
+        specifier: ^6.0.9
+        version: 6.0.9
       eslint-plugin-prettier:
         specifier: ^5.2.1
         version: 5.2.1(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)
@@ -2268,6 +2271,10 @@ packages:
     peerDependencies:
       eslint: '>=7.28.0'
 
+  eslint-plugin-i18next@6.0.9:
+    resolution: {integrity: sha512-tAof/p58sN4Az+P6kqu+RijqddalHhz0X6fe+exyBJAUvN9Yk1plOKl8XMySCIQS+vnRWbzzThgHXeDe++uEXQ==}
+    engines: {node: '>=0.10.0'}
+
   eslint-plugin-prettier@5.2.1:
     resolution: {integrity: sha512-gH3iR3g4JfF+yYPaJYkN7jEl9QbweL/YfkoRlNnuIEHEz1vHVlCmWOS+eGGiRuzHQXdJFCOTxRgvju9b8VUmrw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3516,6 +3523,10 @@ packages:
 
   rehype-slug@6.0.0:
     resolution: {integrity: sha512-lWyvf/jwu+oS5+hL5eClVd3hNdmwM1kAC0BUvEGD19pajQMIzcNUd/k9GsfQ+FfECvX+JE+e9/btsKH0EjJT6A==}
+
+  requireindex@1.1.0:
+    resolution: {integrity: sha512-LBnkqsDE7BZKvqylbmn7lTIVdpx4K/QCduRATpO5R+wtPmky/a8pN1bO2D6wXppn1497AJF9mNjqAXr6bdl9jg==}
+    engines: {node: '>=0.10.5'}
 
   requireindex@1.2.0:
     resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
@@ -6584,6 +6595,11 @@ snapshots:
       is-glob: 4.0.3
       micromatch: 4.0.7
 
+  eslint-plugin-i18next@6.0.9:
+    dependencies:
+      lodash: 4.17.21
+      requireindex: 1.1.0
+
   eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3):
     dependencies:
       eslint: 8.57.0
@@ -7877,6 +7893,8 @@ snapshots:
       hast-util-heading-rank: 3.0.0
       hast-util-to-string: 3.0.0
       unist-util-visit: 5.0.0
+
+  requireindex@1.1.0: {}
 
   requireindex@1.2.0: {}
 

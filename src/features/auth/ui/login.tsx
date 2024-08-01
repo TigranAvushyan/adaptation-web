@@ -9,10 +9,14 @@ export const Login = () => {
 
 	return (
 		<div className="md:w-[400px] w-[300px] space flex-col">
-			<div>{authT('Authorization')}</div>
-			<Input placeholder={authT('Email')} />
-			<Input placeholder={authT('Password')} />
-			<Button>{t('Send')}</Button>
+			<h3 className="capitalize">{authT('authorization')}</h3>
+			<Input className="placeholder:capitalize" placeholder={authT('email')} />
+			<Input
+				type="password"
+				className="placeholder:capitalize"
+				placeholder={authT('password')}
+			/>
+			<Button>{t('send')}</Button>
 		</div>
 	);
 };

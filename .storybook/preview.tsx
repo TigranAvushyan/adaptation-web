@@ -1,8 +1,8 @@
 import type { Preview } from '@storybook/react';
-import React from 'react';
 
+import '../src/app/config/i18n';
 import '../src/index.css';
-import { ThemeProvider } from '../src/shared/providers/theme';
+import { themeDecorator } from './decorators/theme-decorator';
 
 const preview: Preview = {
 	parameters: {
@@ -13,13 +13,8 @@ const preview: Preview = {
 			},
 		},
 	},
-	decorators: [
-		(Story) => (
-			<ThemeProvider defaultTheme="dark">
-				<Story />
-			</ThemeProvider>
-		),
-	],
+
+	decorators: [themeDecorator],
 };
 
 export default preview;

@@ -7,10 +7,11 @@ module.exports = {
 		'plugin:react-hooks/recommended',
 		'plugin:prettier/recommended',
 		'plugin:storybook/recommended',
+		'plugin:i18next/recommended',
 	],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parser: '@typescript-eslint/parser',
-	plugins: ['react-refresh', 'check-file'],
+	plugins: ['react-refresh', 'check-file', 'i18next'],
 	rules: {
 		'prettier/prettier': 'error',
 		'react-refresh/only-export-components': [
@@ -23,4 +24,13 @@ module.exports = {
 			{ ignoreMiddleExtensions: true },
 		],
 	},
+	overrides: [
+		{
+			files: ['test/**/*.ts'],
+			rules: {
+				'no-use-before-define': ['off'],
+				'max-lines-per-function': ['off'],
+			},
+		},
+	],
 };

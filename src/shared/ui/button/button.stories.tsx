@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import i18n from '@/app/config/i18n';
+
 import { Spinner } from '../spinner/spinner';
 import { Button } from './button';
 
@@ -7,7 +9,7 @@ const meta: Meta<typeof Button> = {
 	component: Button,
 	title: 'UI/Button',
 	args: {
-		children: 'Button',
+		children: i18n.t('button', { ns: 'storybook' }),
 	},
 	argTypes: {
 		variant: {
