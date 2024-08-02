@@ -13,6 +13,7 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	plugins: ['react-refresh', 'check-file', 'i18next'],
 	rules: {
+		'i18next/no-literal-string': 'off',
 		'prettier/prettier': 'error',
 		'react-refresh/only-export-components': [
 			'warn',
