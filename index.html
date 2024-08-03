@@ -7,12 +7,14 @@
 		<meta
 			http-equiv="Content-Security-Policy"
 			content="
-					default-src http://91.186.196.139/;
-					script-src http://91.186.196.139/ 'unsafe-inline' 'unsafe-eval';
-					style-src http://91.186.196.139/ 'unsafe-inline';
-					img-src http://91.186.196.139/ data:;
-					connect-src http://91.186.196.139/ https://api.example.com;
-				"
+  default-src 'self';
+  script-src 'self' 'nonce-randomNonce';
+  style-src 'self' 'nonce-randomNonce';
+  img-src 'self' data:;
+  connect-src 'self' https://api.example.com;
+  object-src 'none';
+  base-uri 'self';
+"
 		/>
 		<title>Vite + React + TS</title>
 	</head>
